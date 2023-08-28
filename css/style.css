@@ -74,13 +74,23 @@ button {
   text-decoration: none;
 }
 .nav,
-.nav-list {
+.nav-list,
+.nav-address {
+  display: flex;
+  width: 1440px;
+  height: 72px;
   display: flex;
   flex-direction: row;
   gap: 32px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+.nav-list {
+  justify-content: flex-start;
+}
+.nav-address {
+  justify-content: flex-end;
 }
 .nav-anchor {
   display: flex;
