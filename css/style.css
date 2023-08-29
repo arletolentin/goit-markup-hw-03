@@ -54,12 +54,17 @@ button {
   --grey: #2e2f42;
   --dairy: #fcfcfc;
 }
+.container {
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 .body {
   width: 1440px;
   height: 2592px;
   background: #fff;
 }
-.port-body {
+.portfolio-body {
   width: 1440px;
   height: 2076px;
   background: #FFF;
@@ -73,17 +78,12 @@ button {
   flex-shrink: 0;
   text-decoration: none;
 }
-.nav,
 .nav-list,
 .nav-address {
-  display: flex;
-  width: 1440px;
-  height: 72px;
   display: flex;
   flex-direction: row;
   gap: 32px;
   align-items: center;
-  justify-content: center;
   text-decoration: none;
 }
 .nav-list {
@@ -112,6 +112,15 @@ button {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+.nav-anchor:hover {
+  color: var(--ocean);
+}
+.nav-address-link:hover {
+  color: var(--ocean);
+}
+.hero-button:hover {
+  background-color: var(--ocean);
+}
 .web,
 .studio {
   font-family: 'Raleway', sans-serif;
@@ -130,7 +139,7 @@ button {
 }
 .hero {
   width: 1440px;
-  height: 312px;
+  height: 600px;
   flex-shrink: 0;
   background: var(--navyblue);
   flex-shrink: 0;
@@ -165,23 +174,23 @@ button {
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
 }
-.port-btn {
+.portfolio-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 32px;
 }
-.portbtn-item {
+.portfolio-button-list {
   display: inline-flex;
   align-items: flex-start;
   gap: 24px;
 }
-.portbtn-list:hover {
+.portfolio-button-item:hover {
   background: var(--ocean);
   color: var(--white)
 }
-.portbtn-list {
+.portfolio-button-item {
   display: flex;
   color: var(--iris);
   text-align: center;
@@ -199,15 +208,15 @@ button {
   justify-content: center;
   align-items: center;
 }
-.port-services {
+.portfolio-services {
   padding-bottom: 125px;
 }
-.port-list {
+.portfolio-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.port-item-row {
+.portfolio-item-row {
   display: flex;
   gap: 32px;
   justify-content: center;
@@ -337,21 +346,7 @@ button {
   justify-content: center;
   gap: 32px;
 }
-.port-img {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  justify-content: center;
-}
-.port-img-item {
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  padding: 12px 24px;
-  border: 1px solid var(--cornflower, #E7E9FC);
-  background: var(--white, #FFF);
-}
-.port-main {
+.portfolio-main {
   padding-top: 80px;
 }
 .footer {
@@ -383,11 +378,4 @@ button {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
-}
-.footer-container {
-  display: flex;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 10%;
 }
