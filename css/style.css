@@ -54,11 +54,6 @@ button {
   --grey: #2e2f42;
   --dairy: #fcfcfc;
 }
-.container {
-    width: 1128px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
 .body {
   width: 1440px;
   height: 2592px;
@@ -69,29 +64,30 @@ button {
   height: 2076px;
   background: #FFF;
 }
+.container {
+  width: 1128px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .head {
-  display: flex;
   width: 1440px;
   height: 72px;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
   text-decoration: none;
 }
-.nav-list,
-.nav-address {
+.nav-address,
+.nav-list {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  align-items: center;
   text-decoration: none;
-}
-.nav-list {
-  justify-content: flex-start;
-}
+  }
 .nav-address {
-  justify-content: flex-end;
-}
+    justify-content: flex-end;
+  }
+  .nav-list {
+  justify-content: flex-start;
+  }
 .nav-anchor {
   display: flex;
   color: var(--navyblue);
@@ -157,6 +153,7 @@ button {
   font-weight: 700;
   line-height: 60px; /* 107.143% */
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
 }
 .hero-button {
   display: inline-flex;
@@ -355,6 +352,7 @@ button {
   flex-shrink: 0;
   background: var(--navyblue);
   display: flex;
+  padding-top: 75px;
 }
 .web-foot,
 .studio-foot {
