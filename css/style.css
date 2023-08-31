@@ -64,7 +64,14 @@ button {
   height: 2076px;
   background: #FFF;
 }
-.container {
+.nav-container,
+.hero-container,
+.feature-container,
+.services-container,
+.footer-container,
+.portfolio-butoon-container,
+.portfolio-services-container,
+.footer-container {
   width: 1128px;
   margin: 0 auto;
   padding: 0 15px;
@@ -75,18 +82,29 @@ button {
   flex-shrink: 0;
   text-decoration: none;
 }
+.nav {
+  display: inline-flex;
+  justify-content: baseline;
+  padding-top: 24px;
+}
 .nav-address,
 .nav-list {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  gap: 32px;
   text-decoration: none;
   }
-.nav-address {
+.nav-address-link {
     justify-content: flex-end;
+    margin-right: 40px;
   }
   .nav-list {
   justify-content: flex-start;
+  }
+  .nav-item {
+    margin-right: 40px;
+  }
+  .nav-item:last-child {
+    margin-right: 262px;
   }
 .nav-anchor {
   display: flex;
@@ -117,6 +135,9 @@ button {
 .hero-button:hover {
   background-color: var(--ocean);
 }
+.nav-logo {
+  margin-right: 76px;
+}
 .web,
 .studio {
   font-family: 'Raleway', sans-serif;
@@ -142,7 +163,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .hero-heading {
   color: var(--white);
@@ -156,10 +176,8 @@ button {
   margin-bottom: 48px;
 }
 .hero-button {
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
   justify-items: center;
+  align-items: center;
   gap: 10px;
   border-radius: 4px;
   background: var(--iris);
@@ -170,18 +188,20 @@ button {
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
+  margin-left: 480px;
 }
 .portfolio-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 32px;
+  padding-bottom: 72px;
 }
 .portfolio-button-list {
   display: inline-flex;
   align-items: flex-start;
   gap: 24px;
+  margin-left: 271px;
 }
 .portfolio-button-item:hover {
   background: var(--ocean);
@@ -206,14 +226,14 @@ button {
   align-items: center;
 }
 .portfolio-services {
-  padding-bottom: 125px;
+  padding-bottom: 120px;
 }
-.portfolio-list {
+.portfolio-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.portfolio-item-row {
+.portfolio-list-row {
   display: flex;
   gap: 32px;
   justify-content: center;
@@ -228,6 +248,8 @@ button {
   font-weight: 500;
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .service-type {
   color: var(--slate);
@@ -238,6 +260,7 @@ button {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+  padding-bottom: 32px;
 }
 .team-item-text{
   text-align: center;
@@ -269,6 +292,7 @@ button {
   padding-bottom: 100px;
   background: #FFF;
   justify-content: center;
+  padding-top: 120px;
 }
 .feature-list {
   display: flex;
@@ -285,8 +309,7 @@ button {
 .services {
   width: 1440px;
   background: #FFF;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 .services-title {
   color: var(--navyblue);
@@ -297,7 +320,8 @@ button {
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-bottom: 50px;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .services-list {
   display: flex;
@@ -325,7 +349,8 @@ button {
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-bottom: 75px;
+  margin-bottom: 8px;
+  margin-top: 32px;
 }
 .team-item {
   display: flex;
@@ -343,8 +368,18 @@ button {
   justify-content: center;
   gap: 32px;
 }
+.team-item-name {
+  margin-top: 32px;
+  margin-bottom: 8;
+}
+.team-item-text {
+  padding-bottom: 32px;
+}
 .portfolio-main {
   padding-top: 80px;
+}
+.footer-container {
+  margin-top: 101.5px;
 }
 .footer {
   width: 1440px;
@@ -352,7 +387,6 @@ button {
   flex-shrink: 0;
   background: var(--navyblue);
   display: flex;
-  padding-top: 75px;
 }
 .web-foot,
 .studio-foot {
@@ -361,6 +395,7 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.54px;
+  margin-bottom: 17.5px;
 }
 .web-foot {
   color: var(--iris);
