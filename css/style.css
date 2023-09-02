@@ -72,39 +72,34 @@ button {
 .portfolio-butoon-container,
 .portfolio-services-container,
 .footer-container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .head {
   width: 1440px;
-  height: 72px;
   flex-shrink: 0;
   text-decoration: none;
+  padding: 24px 0;
 }
 .nav {
   display: inline-flex;
-  justify-content: baseline;
-  padding-top: 24px;
 }
 .nav-address,
 .nav-list {
   display: inline-flex;
   flex-direction: row;
+  gap: 40px;
   text-decoration: none;
   }
 .nav-address-link {
     justify-content: flex-end;
-    margin-right: 40px;
   }
   .nav-list {
   justify-content: flex-start;
   }
-  .nav-item {
-    margin-right: 40px;
-  }
   .nav-item:last-child {
-    margin-right: 262px;
+    margin-right: 332px;
   }
 .nav-anchor {
   display: flex;
@@ -156,13 +151,16 @@ button {
 }
 .hero {
   width: 1440px;
-  height: 600px;
   flex-shrink: 0;
   background: var(--navyblue);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .hero-heading {
   color: var(--white);
@@ -178,7 +176,6 @@ button {
 .hero-button {
   justify-items: center;
   align-items: center;
-  gap: 10px;
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -188,6 +185,7 @@ button {
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
+  padding: 16px 32px;
   margin-left: 480px;
 }
 .portfolio-button {
@@ -288,16 +286,14 @@ button {
   height: 104px;
   flex-shrink: 0;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background: #FFF;
   justify-content: center;
-  padding-top: 120px;
+  margin-bottom: 120px;
 }
 .feature-list {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 44px;
 }
 .feature-item {
   display: flex;
@@ -309,7 +305,7 @@ button {
 .services {
   width: 1440px;
   background: #FFF;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 .services-title {
   color: var(--navyblue);
