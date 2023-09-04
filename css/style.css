@@ -55,12 +55,9 @@ button {
   --dairy: #fcfcfc;
 }
 .body {
-  width: 1440px;
-  height: 2592px;
   background: #fff;
 }
 .portfolio-body {
-  width: 1440px;
   background: #FFF;
 }
 .nav-container,
@@ -76,7 +73,6 @@ button {
   padding: 0 15px;
 }
 .head {
-  width: 1440px;
   flex-shrink: 0;
   text-decoration: none;
   padding: 24px 0;
@@ -149,7 +145,6 @@ button {
   color: var(--navyblue);
 }
 .hero {
-  width: 1440px;
   flex-shrink: 0;
   background: var(--navyblue);
   flex-shrink: 0;
@@ -189,11 +184,11 @@ button {
 }
 .portfolio-button {
   justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .portfolio-button-list {
-  display: inline-flex;
+  display: flex;
   gap: 24px;
   justify-content: center;
 }
@@ -213,14 +208,13 @@ button {
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   border-radius: 4px;
-  border: 1px solid var(--cornflower, #E7E9FC);
+  border: 1px solid   var(--cornflower, #E7E9FC);
   background: var(--cloud);
   padding: 12px 24px;
-  justify-content: center;
   align-items: center;
 }
 .portfolio-services {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -230,14 +224,20 @@ button {
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  flex-basis: 33.33333 %;
+  border-radius: 1px solid var(--CORNFLOWER);
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding-bottom: 32px;
 }
 .portfolio-list-row {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
-  justify-content: center;
-  padding-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-text-services-container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .service-name {
   color: var(--navyblue);
@@ -282,8 +282,6 @@ button {
   letter-spacing: 0.4px;
 }
 .features {
-  width: 1440px;
-  height: 104px;
   flex-shrink: 0;
   display: flex;
   background: #FFF;
@@ -303,7 +301,6 @@ button {
   gap: 8px;
 }
 .services {
-  width: 1440px;
   background: #FFF;
   margin-bottom: 120px;
 }
@@ -328,7 +325,6 @@ button {
   display: flex;
 }
 .team {
-  width: 1440px;
   flex-shrink: 0;
   background: var(--cloud);
   padding-top: 120px;
@@ -351,9 +347,8 @@ button {
   justify-content: center;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-  background: var(--white, #FFF);
+  background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
 }
 .team-list {
   display: flex;
@@ -363,14 +358,12 @@ button {
   /* padding-bottom: 32px; */
 }
 .team-item-name {
-  margin-top: 32px;
   margin-bottom: 8px;
 }
-.team-item-text {
-  /* padding-bottom: 32px; */
+.team-text-container {
+  padding: 32px 16px;
 }
 .footer {
-  width: 1440px;
   flex-shrink: 0;
   background: var(--navyblue);
   display: flex;
