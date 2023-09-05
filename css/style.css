@@ -67,7 +67,7 @@ button {
 .footer-container,
 .portfolio-butoon-container,
 .portfolio-services-container,
-.footer-container {
+.team-container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -92,9 +92,7 @@ button {
   }
   .nav-list {
   justify-content: flex-start;
-  }
-  .nav-item:last-child {
-    margin-right: 332px;
+  margin-right: 332px;
   }
 .nav-anchor {
   display: flex;
@@ -152,7 +150,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 120px;
   padding-bottom: 188px;
   padding-top: 188px;
 }
@@ -218,17 +215,10 @@ button {
   display: flex;
   flex-direction: column;
 }
-.portfolio-text-services-container {
-  margin-top: 32px;
-}
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  flex-basis: 33.33333 %;
-  border-radius: 1px solid var(--CORNFLOWER);
-  background: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
+  /* flex-basis: 33.33333 %; */
 }
 .portfolio-list-row {
   display: flex;
@@ -236,8 +226,10 @@ button {
   gap: 24px;
 }
 .portfolio-text-services-container {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+  border-top: unset;
 }
 .service-name {
   color: var(--navyblue);
@@ -286,7 +278,7 @@ button {
   display: flex;
   background: #FFF;
   justify-content: center;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .feature-list {
   display: flex;
@@ -302,7 +294,7 @@ button {
 }
 .services {
   background: #FFF;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .services-title {
   color: var(--navyblue);
@@ -327,8 +319,7 @@ button {
 .team {
   flex-shrink: 0;
   background: var(--cloud);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .team-title {
   color: var(--navyblue);
@@ -355,7 +346,6 @@ button {
   flex-direction: row;
   justify-content: center;
   gap: 24px;
-  /* padding-bottom: 32px; */
 }
 .team-item-name {
   margin-bottom: 8px;
